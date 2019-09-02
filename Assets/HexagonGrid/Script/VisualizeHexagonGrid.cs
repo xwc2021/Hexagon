@@ -52,6 +52,7 @@ namespace Mytool
 
         public void hitBox(Ray ray)
         {
+            // to local ray
             ray.origin = transform.InverseTransformPoint(ray.origin);
             ray.direction = transform.InverseTransformVector(ray.direction);
 
@@ -82,7 +83,7 @@ namespace Mytool
             else
                 hit_cube.localPosition = index + getNearBoxOffset(ref hit_pos);
 
-            Debug.DrawLine(ray.origin, hit_pos);
+            Debug.DrawLine(transform.TransformPoint(ray.origin), transform.TransformPoint(hit_pos));
         }
 
         public void generateCubeSet()
