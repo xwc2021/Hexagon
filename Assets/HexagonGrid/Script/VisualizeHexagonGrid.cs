@@ -55,6 +55,16 @@ namespace Mytool
             ray.origin = transform.InverseTransformPoint(ray.origin);
             ray.direction = transform.InverseTransformVector(ray.direction);
 
+            /*
+             雖然荷蘭兄已經有提供教學
+             但我還是想試試自己的方法
+
+             group 0 : x+y+z=0
+                https://www.geogebra.org/m/jmznkghr
+
+            group 1 : x+y+z=1
+                https://www.geogebra.org/m/h7nqemzh
+             */
 
             // 擊中 x+y+z=3的平面
             Vector3 hit_pos;
