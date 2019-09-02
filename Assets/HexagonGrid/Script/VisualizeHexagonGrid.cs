@@ -60,10 +60,10 @@ namespace Mytool
              但我還是想試試自己的方法
 
              group 0 : x+y+z=0
-                https://www.geogebra.org/m/jmznkghr
+             https://www.geogebra.org/m/jmznkghr
 
             group 1 : x+y+z=1
-                https://www.geogebra.org/m/h7nqemzh
+            https://www.geogebra.org/m/h7nqemzh
              */
 
             // 擊中 x+y+z=3的平面
@@ -80,14 +80,7 @@ namespace Mytool
             if (group == 0)
                 hit_cube.localPosition = index;
             else
-            {
-                var fraction_x = hit_pos.x % 1;
-                var fraction_y = hit_pos.y % 1;
-                var fraction_z = hit_pos.z % 1;
-
                 hit_cube.localPosition = index + getNearBoxOffset(ref hit_pos);
-            }
-
 
             Debug.DrawLine(ray.origin, hit_pos);
         }
