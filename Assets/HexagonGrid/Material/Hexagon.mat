@@ -22,7 +22,11 @@ Material:
     m_TexEnvs: []
     m_Floats: []
     m_Colors:
+    - Vector2_5562E47C: {r: 0, g: 0, b: 0, a: 0}
+    - Vector3_17B69D17: {r: 0, g: 0, b: 0, a: 0}
     - _cameraPos: {r: 5, g: 5, b: 5, a: 0}
     - _helpV: {r: 0, g: 1, b: 0, a: 0}
+    - _userClickPos: {r: 0, g: 0, b: 0, a: 0}
+    - _userClickUV: {r: 0.32527834, g: 0.7788217, b: 0, a: 0}
     - _uvScale: {r: 15.5, g: 5, b: 0, a: 0}
     - _zDir: {r: -0.5773503, g: -0.5773503, b: -0.5773503, a: 0}
