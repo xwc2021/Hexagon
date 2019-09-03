@@ -2,9 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class RayHitDonut : MonoBehaviour
+public class RayHitMesh : MonoBehaviour
 {
-    public UpdateDountMaterial updateDountMaterial;
     Camera using_camera;
     private void Awake()
     {
@@ -22,6 +21,7 @@ public class RayHitDonut : MonoBehaviour
             {
                 var uv = hit.textureCoord;
                 Debug.Log(uv);
+                var updateDountMaterial=hit.collider.gameObject.GetComponent<UpdateDountMaterial>();
                 updateDountMaterial.updateMaterialProperty(uv);
             }
             else

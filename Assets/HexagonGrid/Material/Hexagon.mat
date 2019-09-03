@@ -27,6 +27,6 @@ Material:
     - _cameraPos: {r: 5, g: 5, b: 5, a: 0}
     - _helpV: {r: 0, g: 1, b: 0, a: 0}
     - _userClickPos: {r: 0, g: 0, b: 0, a: 0}
-    - _userClickUV: {r: 0.32527834, g: 0.7788217, b: 0, a: 0}
-    - _uvScale: {r: 15.5, g: 5, b: 0, a: 0}
+    - _userClickUV: {r: 0, g: 0, b: 0, a: 0}
+    - _uvScale: {r: 20.43, g: 21.16, b: 0, a: 0}
     - _zDir: {r: -0.5773503, g: -0.5773503, b: -0.5773503, a: 0}
