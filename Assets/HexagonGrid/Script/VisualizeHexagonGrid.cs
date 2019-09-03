@@ -22,8 +22,6 @@ namespace Mytool
         {
             target_camera.transform.position = transform.position + new Vector3(1, 1, 1) * 5;
             target_camera.transform.LookAt(transform.position, Vector3.up);
-            var hexagonGridCamera = target_camera.GetComponent<HexagonGridCamera>();
-            hexagonGridCamera.visualizeHexagonGrid = this;
         }
 
         Vector3 getNearBoxOffset(ref Vector3 hit_pos)
@@ -50,11 +48,16 @@ namespace Mytool
             return offset;
         }
 
-        public void hitBox(Ray ray)
+        public void hitBox(Ray ray_camera_space)
         {
-            // to local ray
+            // camera to world 
+            var ray= new Ray();
+            ray.origin = target_camera.transform.TransformPoint(ray_camera_space.origin);
+            ray.direction = target_camera.transform.TransformVector(ray_camera_space.direction);
+
+            // to local 
             ray.origin = transform.InverseTransformPoint(ray.origin);
-            ray.direction = transform.InverseTransformVector(ray.direction);
+            ray.direction =transform.InverseTransformVector(ray.direction);
 
             /*
              雖然荷蘭兄已經有提供教學
