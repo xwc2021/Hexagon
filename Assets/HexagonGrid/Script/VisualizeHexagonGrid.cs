@@ -70,7 +70,7 @@ namespace Mytool
             https://www.geogebra.org/m/h7nqemzh
              */
 
-            // 擊中 x+y+z=3的平面
+            // 擊中 x+y+z=2的平面
             Vector3 hit_pos;
             var C = new Vector3(1.0f / 3, 1.0f / 3, 4.0f / 3);
             var N = new Vector3(1, 1, 1).normalized;
